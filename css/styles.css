@@ -314,8 +314,7 @@ img {
 
 .team .social-list-link:hover,
 .team .social-list-link:focus {
-  fill: var(--press-state);
-  border-color: var(--press-state);
+  background-color: var(--press-state);
 }
 .social-list {
   display: flex;
@@ -330,6 +329,9 @@ img {
 
   border-radius: 50%;
   background-color: #4d5ae5;
+}
+.social-list-icon{
+  fill: var(--light);
 }
 
 /* ======= /TEAM ======= */
