@@ -331,13 +331,26 @@ img {
   border-radius: 50%;
   background-color: #4d5ae5;
 }
-.social-list-icon{
+.social-list-icon {
   fill: var(--light);
 }
 
 /* ======= /TEAM ======= */
 
 /* ======= CUSTOMERS ======= */
+.customers .title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
 .customers .list {
   /* width: 168px;
   height: 88px; */
@@ -345,23 +358,33 @@ img {
   justify-content: center;
   gap: 24px;
 }
+.customers .item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
 .customers .link {
-  display: inline-block;
-  padding: 16px 32px;
-  border: 1px solid var(--subtle-text);
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
-  fill: var(--subtle-text);
-}
-.customers .link:hover,
-.customers .link:focus {
-  fill: var(--press-state);
-  border-color: var(--press-state);
-}
-.customers .icon {
-  width: 104px;
-  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8e8f99;
+  fill: currentColor;
 }
 
+.customers .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* fill: currentColor; */
+}
+.group-link:hover,
+.group-link:focus {
+  border-color: var(--press-state);
+  fill:var(--press-state);
+}
 /* ======= FOOTER ======= */
 .footer {
   background-color: var(--dark);
@@ -384,6 +407,54 @@ img {
 .footer .whitecol {
   width: 264px;
 }
+/* /FOOTER */
+/* Footer social section */
+.footer-div {
+  display: flex;
+  align-items: baseline;
+}
+.footer-div-logo {
+  margin-right: 120px;
+}
+.footer-social-section {
+  margin-left: 0;
+}
+.footer .social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.footer-social-p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer .social-list-item {
+  width: 40px;
+  height: 40px;
+}
+.footer .social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.footer .social-list-icon {
+  fill: var(--light);
+}
+.footer .social-list-link:hover,
+.footer .social-list-link:focus {
+  background-color: var(--success);
+}
+/* ///FOOTER SOCIAL SECTION */
 
 /* ----=  Portfolio =---- */
 .projects {
